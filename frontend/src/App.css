@@ -1,0 +1,25 @@
+.app {
+  min-height: 100vh;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 4rem;
+  color: var(--brown-500);
+  font-size: 1.1rem;
+}
+
+.error-banner {
+  background: #fee2e2;
+  color: #b91c1c;
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius);
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}

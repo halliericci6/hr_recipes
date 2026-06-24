@@ -1,0 +1,42 @@
+.header {
+  background: linear-gradient(135deg, #1e3a5f 0%, #0f172a 100%);
+  color: var(--warm-white);
+  padding: 2rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.header__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header__brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header__icon {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.header__title {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.header__subtitle {
+  font-size: 0.95rem;
+  color: var(--brown-300);
+  margin-top: 0.15rem;
+}
+
+@media (max-width: 600px) {
+  .header__title {
+    font-size: 1.5rem;
+  }
+}

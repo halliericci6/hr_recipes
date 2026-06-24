@@ -1,0 +1,109 @@
+.recipe-card {
+  background: var(--warm-white);
+  border: 1px solid var(--brown-100);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  cursor: pointer;
+  transition: box-shadow 0.2s, transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.recipe-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.recipe-card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.recipe-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recipe-card__icon {
+  font-size: 1.75rem;
+}
+
+.recipe-card__difficulty {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+}
+
+.recipe-card__difficulty--easy {
+  background: #e6f4ea;
+  color: var(--green);
+}
+
+.recipe-card__difficulty--medium {
+  background: var(--accent-light);
+  color: var(--accent);
+}
+
+.recipe-card__difficulty--advanced {
+  background: #e0e7ff;
+  color: #1e40af;
+}
+
+.recipe-card__name {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.3;
+  color: var(--brown-900);
+}
+
+.recipe-card__description {
+  font-size: 0.88rem;
+  color: var(--brown-500);
+  line-height: 1.5;
+  flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.recipe-card__meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--brown-300);
+}
+
+.recipe-card__category {
+  font-weight: 500;
+  color: var(--brown-700);
+}
+
+.recipe-card__times {
+  display: flex;
+  gap: 0.75rem;
+  font-size: 0.78rem;
+  color: var(--brown-500);
+  flex-wrap: wrap;
+}
+
+.recipe-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.25rem;
+}
+
+.recipe-card__tag {
+  background: var(--brown-100);
+  color: var(--brown-700);
+  font-size: 0.72rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+}

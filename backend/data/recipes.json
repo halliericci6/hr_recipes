@@ -1,0 +1,309 @@
+[
+  {
+    "id": 1,
+    "name": "Classic Chocolate Chip Cookies",
+    "category": "Cookies",
+    "source": "Toll House Original",
+    "description": "Crispy edges, chewy centers, and plenty of chocolate chips — the cookie that started it all.",
+    "ingredients": [
+      "2¼ cups all-purpose flour",
+      "1 tsp baking soda",
+      "1 tsp salt",
+      "1 cup butter, softened",
+      "¾ cup granulated sugar",
+      "¾ cup packed brown sugar",
+      "2 large eggs",
+      "2 tsp vanilla extract",
+      "2 cups semi-sweet chocolate chips"
+    ],
+    "instructions": [
+      "Preheat oven to 375°F. Combine flour, baking soda, and salt in a bowl.",
+      "Beat butter and both sugars until creamy. Add eggs and vanilla; beat well.",
+      "Gradually blend in flour mixture. Stir in chocolate chips.",
+      "Drop rounded tablespoons onto ungreased baking sheets.",
+      "Bake 9–11 minutes until golden brown. Cool on baking sheet 2 minutes, then transfer to wire rack."
+    ],
+    "prepTime": "15 min",
+    "bakeTime": "11 min",
+    "yield": "48 cookies",
+    "difficulty": "Easy",
+    "tags": ["classic", "dessert", "crowd-pleaser"]
+  },
+  {
+    "id": 2,
+    "name": "Sourdough Country Loaf",
+    "category": "Bread",
+    "source": "Tartine Bread",
+    "description": "A rustic, open-crumbed sourdough with a crackly crust and mild tang.",
+    "ingredients": [
+      "200g active sourdough starter",
+      "700g bread flour",
+      "50g whole wheat flour",
+      "650g warm water",
+      "18g fine sea salt",
+      "Rice flour for dusting"
+    ],
+    "instructions": [
+      "Mix flours and 600g water; rest 30–60 minutes (autolyse).",
+      "Add starter and remaining water. Mix until incorporated.",
+      "Add salt; perform 4 sets of stretch-and-folds, 30 minutes apart.",
+      "Bulk ferment 3–4 hours at room temperature until dough rises ~30%.",
+      "Shape into a boule, proof in a banneton 12–16 hours in the fridge.",
+      "Preheat Dutch oven to 500°F. Score and bake covered 20 min, uncovered 20–25 min."
+    ],
+    "prepTime": "45 min",
+    "bakeTime": "45 min",
+    "yield": "1 large loaf",
+    "difficulty": "Advanced",
+    "tags": ["sourdough", "artisan", "weekend-project"]
+  },
+  {
+    "id": 3,
+    "name": "Banana Bread",
+    "category": "Quick Bread",
+    "source": "Grandma's Kitchen",
+    "description": "Moist, warmly spiced banana bread — perfect for overripe bananas.",
+    "ingredients": [
+      "3 ripe bananas, mashed",
+      "⅓ cup melted butter",
+      "¾ cup sugar",
+      "1 egg, beaten",
+      "1 tsp vanilla extract",
+      "1 tsp baking soda",
+      "Pinch of salt",
+      "1½ cups all-purpose flour",
+      "½ tsp cinnamon"
+    ],
+    "instructions": [
+      "Preheat oven to 350°F. Grease a 9×5 inch loaf pan.",
+      "Mix mashed bananas with melted butter.",
+      "Stir in sugar, egg, and vanilla.",
+      "Sprinkle baking soda and salt over mixture; stir.",
+      "Add flour and cinnamon; mix until just combined.",
+      "Pour into pan and bake 55–65 minutes until a toothpick comes out clean."
+    ],
+    "prepTime": "10 min",
+    "bakeTime": "60 min",
+    "yield": "1 loaf",
+    "difficulty": "Easy",
+    "tags": ["quick-bread", "breakfast", "no-waste"]
+  },
+  {
+    "id": 4,
+    "name": "Fudgy Brownies",
+    "category": "Bars",
+    "source": "King Arthur Baking",
+    "description": "Dense, fudgy brownies with a shiny crackled top and deep chocolate flavor.",
+    "ingredients": [
+      "1 cup unsalted butter",
+      "2 cups sugar",
+      "4 large eggs",
+      "1 cup cocoa powder",
+      "1 cup all-purpose flour",
+      "½ tsp salt",
+      "1 tsp vanilla extract",
+      "1 cup chopped walnuts (optional)"
+    ],
+    "instructions": [
+      "Preheat oven to 350°F. Line a 9×13 pan with parchment.",
+      "Melt butter; whisk in sugar, then eggs one at a time.",
+      "Stir in cocoa, flour, salt, and vanilla until just combined.",
+      "Fold in walnuts if using.",
+      "Spread in pan and bake 25–30 minutes. Cool completely before cutting."
+    ],
+    "prepTime": "15 min",
+    "bakeTime": "28 min",
+    "yield": "24 brownies",
+    "difficulty": "Easy",
+    "tags": ["chocolate", "dessert", "potluck"]
+  },
+  {
+    "id": 5,
+    "name": "Lemon Pound Cake",
+    "category": "Cakes",
+    "source": "Ina Garten",
+    "description": "A buttery, tender pound cake with bright lemon glaze.",
+    "ingredients": [
+      "3 cups all-purpose flour",
+      "1 tsp baking powder",
+      "½ tsp baking soda",
+      "1 tsp salt",
+      "1 cup butter, softened",
+      "2 cups sugar",
+      "4 large eggs",
+      "1 cup buttermilk",
+      "Zest of 2 lemons",
+      "⅓ cup fresh lemon juice",
+      "1 cup powdered sugar"
+    ],
+    "instructions": [
+      "Preheat oven to 350°F. Grease and flour a bundt pan.",
+      "Whisk flour, baking powder, baking soda, and salt.",
+      "Cream butter and sugar until light and fluffy. Beat in eggs one at a time.",
+      "Alternate adding dry ingredients and buttermilk. Fold in lemon zest.",
+      "Pour into pan; bake 55–65 minutes until golden and a tester comes out clean.",
+      "Whisk lemon juice with powdered sugar for glaze. Drizzle over cooled cake."
+    ],
+    "prepTime": "20 min",
+    "bakeTime": "60 min",
+    "yield": "12 servings",
+    "difficulty": "Medium",
+    "tags": ["citrus", "elegant", "tea-time"]
+  },
+  {
+    "id": 6,
+    "name": "Cinnamon Rolls",
+    "category": "Pastry",
+    "source": "Cinnabon Copycat",
+    "description": "Soft, fluffy rolls swirled with cinnamon sugar and topped with cream cheese frosting.",
+    "ingredients": [
+      "4½ cups all-purpose flour",
+      "¼ cup sugar",
+      "2¼ tsp instant yeast",
+      "1 tsp salt",
+      "1½ cups warm milk",
+      "⅓ cup butter, melted",
+      "2 eggs",
+      "¾ cup brown sugar",
+      "2 tbsp cinnamon",
+      "8 oz cream cheese, softened",
+      "½ cup butter, softened",
+      "2 cups powdered sugar",
+      "1 tsp vanilla extract"
+    ],
+    "instructions": [
+      "Mix flour, sugar, yeast, and salt. Add warm milk, melted butter, and eggs; knead 8–10 minutes.",
+      "Let rise 1–2 hours until doubled.",
+      "Roll dough into an 18×12 inch rectangle. Spread butter, sprinkle brown sugar and cinnamon.",
+      "Roll tightly, slice into 12 rolls. Place in a greased 9×13 pan; rise 45 minutes.",
+      "Bake at 350°F for 25–30 minutes until golden.",
+      "Beat cream cheese, butter, powdered sugar, and vanilla for frosting. Spread over warm rolls."
+    ],
+    "prepTime": "30 min",
+    "bakeTime": "28 min",
+    "yield": "12 rolls",
+    "difficulty": "Medium",
+    "tags": ["breakfast", "weekend", "comfort-food"]
+  },
+  {
+    "id": 7,
+    "name": "French Macarons",
+    "category": "Pastry",
+    "source": "Pierre Hermé Technique",
+    "description": "Delicate almond meringue shells with a smooth, crisp exterior and chewy interior.",
+    "ingredients": [
+      "100g almond flour",
+      "100g powdered sugar",
+      "75g egg whites, aged overnight",
+      "75g granulated sugar",
+      "Gel food coloring",
+      "Buttercream or ganache filling"
+    ],
+    "instructions": [
+      "Sift almond flour and powdered sugar twice.",
+      "Whip egg whites to soft peaks; gradually add granulated sugar to stiff peaks.",
+      "Fold in dry ingredients and color until batter flows like lava.",
+      "Pipe 1½ inch rounds on parchment; rest 30–60 minutes until skin forms.",
+      "Bake at 300°F for 14–16 minutes. Cool completely.",
+      "Pair shells by size; pipe filling and sandwich."
+    ],
+    "prepTime": "45 min",
+    "bakeTime": "15 min",
+    "yield": "24 macarons",
+    "difficulty": "Advanced",
+    "tags": ["french", "elegant", "gift"]
+  },
+  {
+    "id": 8,
+    "name": "Blueberry Muffins",
+    "category": "Muffins",
+    "source": "Martha Stewart",
+    "description": "Tall, bakery-style muffins bursting with fresh blueberries.",
+    "ingredients": [
+      "2 cups all-purpose flour",
+      "½ cup sugar",
+      "2 tsp baking powder",
+      "½ tsp salt",
+      "1 cup milk",
+      "½ cup vegetable oil",
+      "1 egg",
+      "1 tsp vanilla extract",
+      "1½ cups fresh blueberries",
+      "Turbinado sugar for topping"
+    ],
+    "instructions": [
+      "Preheat oven to 400°F. Line a 12-cup muffin tin.",
+      "Whisk flour, sugar, baking powder, and salt.",
+      "Whisk milk, oil, egg, and vanilla in a separate bowl.",
+      "Fold wet into dry until just combined. Gently fold in blueberries.",
+      "Divide batter among cups; sprinkle with turbinado sugar.",
+      "Bake 20–25 minutes until tops are golden and a tester comes out clean."
+    ],
+    "prepTime": "10 min",
+    "bakeTime": "22 min",
+    "yield": "12 muffins",
+    "difficulty": "Easy",
+    "tags": ["breakfast", "fruit", "quick"]
+  },
+  {
+    "id": 9,
+    "name": "Apple Pie",
+    "category": "Pies",
+    "source": "American Test Kitchen",
+    "description": "A flaky double-crust pie filled with spiced, tender apple slices.",
+    "ingredients": [
+      "2½ cups all-purpose flour",
+      "1 tsp salt",
+      "1 cup cold butter, cubed",
+      "6–8 tbsp ice water",
+      "6 cups peeled, sliced Granny Smith apples",
+      "¾ cup sugar",
+      "2 tbsp flour",
+      "1 tsp cinnamon",
+      "¼ tsp nutmeg",
+      "2 tbsp butter",
+      "1 egg, beaten (for egg wash)"
+    ],
+    "instructions": [
+      "Make crust: cut butter into flour and salt until pea-sized. Add ice water until dough holds together. Chill 1 hour.",
+      "Toss apples with sugar, flour, cinnamon, and nutmeg.",
+      "Roll bottom crust; fit into 9-inch pie plate. Add filling; dot with butter.",
+      "Roll top crust; place over filling. Crimp edges; cut vents. Brush with egg wash.",
+      "Bake at 425°F for 15 minutes, then 350°F for 45–55 minutes until golden."
+    ],
+    "prepTime": "40 min",
+    "bakeTime": "60 min",
+    "yield": "8 servings",
+    "difficulty": "Medium",
+    "tags": ["fall", "holiday", "classic"]
+  },
+  {
+    "id": 10,
+    "name": "Croissants",
+    "category": "Pastry",
+    "source": "Paul Hollywood",
+    "description": "Buttery, laminated croissants with dozens of flaky layers.",
+    "ingredients": [
+      "500g bread flour",
+      "10g salt",
+      "80g sugar",
+      "10g instant yeast",
+      "300ml warm milk",
+      "250g cold butter (for lamination)",
+      "1 egg, beaten (for egg wash)"
+    ],
+    "instructions": [
+      "Mix flour, salt, sugar, yeast, and milk into a smooth dough. Chill 1 hour.",
+      "Roll butter into a flat block between parchment.",
+      "Encase butter in dough; perform 3 single folds with 30-minute rests between.",
+      "Roll to 4mm thick; cut triangles and roll into crescent shapes.",
+      "Proof 2 hours until puffy. Brush with egg wash.",
+      "Bake at 400°F for 15–18 minutes until deeply golden."
+    ],
+    "prepTime": "2 hours",
+    "bakeTime": "17 min",
+    "yield": "12 croissants",
+    "difficulty": "Advanced",
+    "tags": ["french", "laminated", "weekend-project"]
+  }
+]
