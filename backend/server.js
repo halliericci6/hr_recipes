@@ -79,6 +79,10 @@ app.get('/api/stats', (_req, res) => {
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`Baking recipe API running at http://localhost:${PORT}`);
-});
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`Baking recipe API running at http://localhost:${PORT}`);
+  });
+}
+
+module.exports = app;
