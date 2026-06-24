@@ -32,7 +32,7 @@
 .header__subtitle {
   font-size: 0.95rem;
   color: var(--brown-300);
-  margin-top: 0.15rem;
+  margin-top: 0.5rem;
 }
 
 @media (max-width: 600px) {
