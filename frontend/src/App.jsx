@@ -4,6 +4,7 @@ import StatsBar from './components/StatsBar';
 import FilterBar from './components/FilterBar';
 import RecipeGrid from './components/RecipeGrid';
 import RecipeDetail from './components/RecipeDetail';
+import AddRecipeModal from './components/AddRecipeModal';
 import './App.css';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
   const [categories, setCategories] = useState([]);
   const [stats, setStats] = useState(null);
   const [selectedRecipe, setSelectedRecipe] = useState(null);
+  const [showAddModal, setShowAddModal] = useState(false);
   const [filters, setFilters] = useState({
     search: '',
     category: '',
@@ -19,7 +21,7 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  useEffect(() => {
+  const loadMeta = () => {
     fetch('/api/categories')
       .then((res) => res.json())
       .then(setCategories)
@@ -29,7 +31,16 @@ function App() {
       .then((res) => res.json())
       .then(setStats)
       .catch(() => {});
+  };
+
+  useEffect(() => {
+    loadMeta();
   }, []);
+
+  const handleRecipeCreated = (recipe) => {
+    setRecipes((prev) => [recipe, ...prev]);
+    loadMeta();
+  };
 
   useEffect(() => {
     setLoading(true);
@@ -57,7 +68,7 @@ function App() {
 
   return (
     <div className="app">
-      <Header />
+      <Header onAddRecipe={() => setShowAddModal(true)} />
       {stats && <StatsBar stats={stats} />}
       <main className="main">
         <FilterBar
@@ -84,6 +95,12 @@ function App() {
         <RecipeDetail
           recipe={selectedRecipe}
           onClose={() => setSelectedRecipe(null)}
+        />
+      )}
+      {showAddModal && (
+        <AddRecipeModal
+          onClose={() => setShowAddModal(false)}
+          onCreated={handleRecipeCreated}
         />
       )}
     </div>

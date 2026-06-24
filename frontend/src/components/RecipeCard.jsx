@@ -23,12 +23,21 @@ export default function RecipeCard({ recipe, onClick }) {
   return (
     <article className="recipe-card" onClick={onClick} role="button" tabIndex={0}
       onKeyDown={(e) => e.key === 'Enter' && onClick()}>
-      <div className="recipe-card__header">
-        <span className="recipe-card__icon" aria-hidden="true">{icon}</span>
-        <span className={`recipe-card__difficulty recipe-card__difficulty--${DIFFICULTY_CLASS[recipe.difficulty]}`}>
-          {recipe.difficulty}
-        </span>
-      </div>
+      {recipe.image ? (
+        <div className="recipe-card__image-wrap">
+          <img className="recipe-card__image" src={recipe.image} alt={recipe.name} />
+          <span className={`recipe-card__difficulty recipe-card__difficulty--${DIFFICULTY_CLASS[recipe.difficulty]}`}>
+            {recipe.difficulty}
+          </span>
+        </div>
+      ) : (
+        <div className="recipe-card__header">
+          <span className="recipe-card__icon" aria-hidden="true">{icon}</span>
+          <span className={`recipe-card__difficulty recipe-card__difficulty--${DIFFICULTY_CLASS[recipe.difficulty]}`}>
+            {recipe.difficulty}
+          </span>
+        </div>
+      )}
       <h2 className="recipe-card__name">{recipe.name}</h2>
       <p className="recipe-card__description">{recipe.description}</p>
       <div className="recipe-card__meta">

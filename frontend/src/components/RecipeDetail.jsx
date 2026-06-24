@@ -38,6 +38,14 @@ export default function RecipeDetail({ recipe, onClose }) {
           ✕
         </button>
 
+        {recipe.image && (
+          <img
+            className="recipe-detail__image"
+            src={recipe.image}
+            alt={recipe.name}
+          />
+        )}
+
         <div className="recipe-detail__header">
           <span className="recipe-detail__icon" aria-hidden="true">{icon}</span>
           <div>

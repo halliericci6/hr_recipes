@@ -1,6 +1,10 @@
+const fs = require('fs');
+const path = require('path');
 const request = require('supertest');
 const app = require('./server');
 const recipes = require('./data/recipes.json');
+
+const DATA_FILE = path.join(__dirname, 'data', 'recipes.json');
 
 describe('GET /api/health', () => {
   it('returns ok status', async () => {
@@ -89,6 +93,52 @@ describe('GET /api/recipes/:id', () => {
     const res = await request(app).get('/api/recipes/9999');
     expect(res.status).toBe(404);
     expect(res.body).toEqual({ error: 'Recipe not found' });
+  });
+});
+
+describe('POST /api/recipes', () => {
+  let snapshot;
+
+  beforeEach(() => {
+    snapshot = fs.readFileSync(DATA_FILE, 'utf8');
+  });
+
+  afterEach(() => {
+    fs.writeFileSync(DATA_FILE, snapshot);
+  });
+
+  it('creates a recipe and returns 201 with a new id', async () => {
+    const before = JSON.parse(snapshot);
+    const maxId = before.reduce((max, r) => Math.max(max, r.id), 0);
+
+    const res = await request(app)
+      .post('/api/recipes')
+      .field('name', 'Test Brownies')
+      .field('category', 'Bars')
+      .field('ingredients', JSON.stringify(['1 cup cocoa', '2 eggs']))
+      .field('instructions', JSON.stringify(['Mix', 'Bake']))
+      .field('tags', JSON.stringify(['test', 'chocolate']));
+
+    expect(res.status).toBe(201);
+    expect(res.body.id).toBe(maxId + 1);
+    expect(res.body.name).toBe('Test Brownies');
+    expect(res.body.ingredients).toEqual(['1 cup cocoa', '2 eggs']);
+    expect(res.body.instructions).toEqual(['Mix', 'Bake']);
+
+    const after = JSON.parse(fs.readFileSync(DATA_FILE, 'utf8'));
+    expect(after).toHaveLength(before.length + 1);
+  });
+
+  it('returns 400 when required fields are missing', async () => {
+    const res = await request(app)
+      .post('/api/recipes')
+      .field('name', 'Incomplete');
+
+    expect(res.status).toBe(400);
+    expect(res.body.error).toMatch(/Missing required field/);
+
+    const after = JSON.parse(fs.readFileSync(DATA_FILE, 'utf8'));
+    expect(after).toHaveLength(JSON.parse(snapshot).length);
   });
 });
 

@@ -1,0 +1,210 @@
+.add-recipe__overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem 1rem;
+  overflow-y: auto;
+  z-index: 100;
+  animation: fadeIn 0.2s ease;
+}
+
+.add-recipe {
+  background: var(--warm-white);
+  border-radius: calc(var(--radius) + 4px);
+  padding: 2rem;
+  max-width: 720px;
+  width: 100%;
+  position: relative;
+  box-shadow: var(--shadow-lg);
+  animation: slideUp 0.25s ease;
+}
+
+.add-recipe__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  background: var(--brown-100);
+  border-radius: 50%;
+  font-size: 0.9rem;
+  color: var(--brown-700);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+}
+
+.add-recipe__close:hover {
+  background: var(--brown-300);
+  color: var(--warm-white);
+}
+
+.add-recipe__title {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 1.25rem;
+  padding-right: 2rem;
+}
+
+.add-recipe__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.add-recipe__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .add-recipe__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.add-recipe__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.85rem;
+  color: var(--brown-700);
+}
+
+.add-recipe__field span {
+  font-weight: 500;
+}
+
+.add-recipe__field input,
+.add-recipe__field select,
+.add-recipe__field textarea,
+.add-recipe__list-row input,
+.add-recipe__list-row textarea {
+  font: inherit;
+  font-size: 0.92rem;
+  padding: 0.5rem 0.65rem;
+  border: 1px solid var(--brown-100);
+  border-radius: var(--radius);
+  background: var(--warm-white);
+  color: var(--brown-900);
+  width: 100%;
+}
+
+.add-recipe__field input:focus,
+.add-recipe__field select:focus,
+.add-recipe__field textarea:focus,
+.add-recipe__list-row input:focus,
+.add-recipe__list-row textarea:focus {
+  outline: none;
+  border-color: var(--brown-300);
+}
+
+.add-recipe__list-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.add-recipe__list-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--brown-700);
+}
+
+.add-recipe__list-row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
+.add-recipe__row-remove {
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  background: var(--brown-100);
+  border-radius: var(--radius);
+  color: var(--brown-700);
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.add-recipe__row-remove:hover {
+  background: var(--brown-300);
+  color: var(--warm-white);
+}
+
+.add-recipe__add-row {
+  align-self: flex-start;
+  background: none;
+  border: none;
+  color: var(--brown-500);
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.2rem 0;
+}
+
+.add-recipe__add-row:hover {
+  color: var(--brown-900);
+}
+
+.add-recipe__preview {
+  max-width: 200px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.add-recipe__error {
+  background: #fde8e8;
+  color: #9b1c1c;
+  padding: 0.6rem 0.85rem;
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+}
+
+.add-recipe__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.add-recipe__btn {
+  font: inherit;
+  font-weight: 500;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--brown-700);
+  color: var(--warm-white);
+  cursor: pointer;
+  transition: background 0.15s, opacity 0.15s;
+}
+
+.add-recipe__btn:hover {
+  background: var(--brown-900);
+}
+
+.add-recipe__btn:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.add-recipe__btn--ghost {
+  background: var(--brown-100);
+  color: var(--brown-700);
+}
+
+.add-recipe__btn--ghost:hover {
+  background: var(--brown-300);
+  color: var(--warm-white);
+}

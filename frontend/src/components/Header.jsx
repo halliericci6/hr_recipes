@@ -1,6 +1,6 @@
 import './Header.css';
 
-export default function Header() {
+export default function Header({ onAddRecipe }) {
   return (
     <header className="header">
       <div className="header__inner">
@@ -11,6 +11,11 @@ export default function Header() {
             <p className="header__subtitle">Baking inventory from my cookbook collection</p>
           </div>
         </div>
+        {onAddRecipe && (
+          <button className="header__add" onClick={onAddRecipe} type="button">
+            + Add Recipe
+          </button>
+        )}
       </div>
     </header>
   );
